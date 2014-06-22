@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Default suite]]]">
+  <test name="Default test(failed)(failed)(failed)">
+    <classes>
+      <class name="com.autotesting.framework.TestClass_1">
+        <methods>
+          <include name="restablishPasswordAndLogin"/>
+          <include name="createAndStartService"/>
+          <include name="notRightLogin"/>
+          <include name="enterLogin"/>
+          <include name="createAndStopService"/>
+          <include name="sendLetter"/>
+        </methods>
+      </class> <!-- com.autotesting.framework.TestClass_1 -->
+    </classes>
+  </test> <!-- Default test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Default suite]]] -->
