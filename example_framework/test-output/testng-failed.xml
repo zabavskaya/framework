@@ -5,7 +5,7 @@
     <classes>
       <class name="com.autotesting.framework.suits.TutByTest">
         <methods>
-          <include name="Incorrectlogin"/>
+          <include name="restablishPasswordAndLogin"/>
         </methods>
       </class> <!-- com.autotesting.framework.suits.TutByTest -->
     </classes>
