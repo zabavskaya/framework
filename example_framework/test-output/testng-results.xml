@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23364" started-at="2014-06-30T17:48:43Z" finished-at="2014-06-30T17:49:06Z">
+  <suite name="Default suite" duration-ms="11578" started-at="2014-07-03T16:53:31Z" finished-at="2014-07-03T16:53:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23364" started-at="2014-06-30T17:48:43Z" finished-at="2014-06-30T17:49:06Z">
+    <test name="Default test" duration-ms="11578" started-at="2014-07-03T16:53:31Z" finished-at="2014-07-03T16:53:42Z">
       <class name="com.autotesting.framework.suits.TutByTest">
-        <test-method status="PASS" signature="Incorrectlogin()[pri:0, instance:com.autotesting.framework.suits.TutByTest@956f6b]" name="Incorrectlogin" duration-ms="23329" started-at="2014-06-30T20:48:43Z" finished-at="2014-06-30T20:49:06Z">
+        <test-method status="PASS" signature="Incorrectlogin()[pri:0, instance:com.autotesting.framework.suits.TutByTest@126099c]" name="Incorrectlogin" duration-ms="11543" started-at="2014-07-03T19:53:31Z" description="????????????? ??????" finished-at="2014-07-03T19:53:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Incorrectlogin -->
-        <test-method status="FAIL" signature="restablishPasswordAndLogin()[pri:0, instance:com.autotesting.framework.suits.TutByTest@956f6b]" name="restablishPasswordAndLogin" duration-ms="7" started-at="2014-06-30T20:49:06Z" finished-at="2014-06-30T20:49:06Z">
+        <test-method status="FAIL" signature="restablishPasswordAndLogin()[pri:0, instance:com.autotesting.framework.suits.TutByTest@126099c]" name="restablishPasswordAndLogin" duration-ms="6" started-at="2014-07-03T19:53:42Z" finished-at="2014-07-03T19:53:42Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Session ID may not be null
@@ -31,8 +31,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:397)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:176)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:573)
-	at com.autotesting.framework.screens.TutByMainPageScreen.restablishPasswordAndLogin(TutByMainPageScreen.java:38)
-	at com.autotesting.framework.suits.TutByTest.restablishPasswordAndLogin(TutByTest.java:53)
+	at com.autotesting.framework.screens.TutByMainPageScreen.restablishPasswordAndLogin(TutByMainPageScreen.java:32)
+	at com.autotesting.framework.suits.TutByTest.restablishPasswordAndLogin(TutByTest.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

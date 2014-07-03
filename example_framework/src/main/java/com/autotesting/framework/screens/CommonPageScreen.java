@@ -13,7 +13,7 @@ import com.autotesting.framework.utils.WebDriverWrapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-// во всех скринах тут бая
+
 public class CommonPageScreen {
 	  protected WebDriverWrapper driver = WebDriverRunner.getDriver();
 	  protected final Logger log = LoggerFactory.getLogger(CommonPageScreen.class); 
@@ -21,14 +21,9 @@ public class CommonPageScreen {
 	 
 
 		public void closePage() {
+			log.info("close browser");
 			WebDriverRunner.stopWebDriver();
-			try {
-				Thread.sleep(5000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			log.info("Закрываем браузер.");
 		}
+		
 		
 }

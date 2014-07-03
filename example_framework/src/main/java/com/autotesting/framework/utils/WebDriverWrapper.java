@@ -20,13 +20,13 @@ public class WebDriverWrapper extends ChromeDriver {
 	}
 
 	public void clickByXpath(String xpath) {
-	    log.debug("[ACTION]: Click element by xpath: '" + xpath + "'");
+	    log.info("[ACTION]: Click element by xpath: '" + xpath + "'");
 	    waitForElementPresentAndVisible(xpath, TIMEOUT_FOR_ACTION_SECONDS);
 	    findElement(By.xpath(xpath)).click();
 	 }
 	
 	public void clickByXpath(String xpath, int timeout) {
-	    log.debug("[ACTION]: Click element by xpath: '" + xpath + "'");
+	    log.info("[ACTION]: Click element by xpath: '" + xpath + "'");
 	    waitForElementPresentAndVisible(xpath, timeout);
 	    findElement(By.xpath(xpath)).click();
 	 }
@@ -34,6 +34,12 @@ public class WebDriverWrapper extends ChromeDriver {
 	public void waitForElementPresentAndVisible(String locator, int timeout) {
 	    WebDriverWait wait = new WebDriverWait(this, timeout);
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+	}
+	
+	public void sendKeysByXpath(String xpath, int timeout, CharSequence keysToSend) {
+		log.info("[ACTION]: Send key by xpath: '" + xpath + "'");
+	    waitForElementPresentAndVisible(xpath, timeout);
+	    findElement(By.xpath(xpath)).sendKeys(keysToSend);
 	}
 }
 
